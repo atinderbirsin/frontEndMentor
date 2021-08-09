@@ -27,13 +27,15 @@ Users should be able to:
 - See hover states for interactive elements
 
 ### Screenshot
+<img src="design/desktop.png">
 
+<img src="design/mobile.png">
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [github](https://github.com/atinderbirsin/frontEndMentor/tree/main/column%20preview%20card%20component)
+- Live Site URL: [Live Site](https://frontend3column.netlify.app/)
 
 ## My process
 
@@ -49,5 +51,5 @@ Users should be able to:
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Website - [Atinder](https://github.com/atinderbirsin)
+- Frontend Mentor - [@Atinder](https://www.frontendmentor.io/profile/atinderbirsin)
