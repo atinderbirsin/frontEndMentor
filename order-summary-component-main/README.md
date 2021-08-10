@@ -28,12 +28,16 @@ Users should be able to:
 
 ### Screenshot
 
+<img src="images/desktop.png">
+
+<img src="images/mobile.png">
+
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [solution Github](https://github.com/atinderbirsin/frontEndMentor/tree/main/order-summary-component-main)
+- Live Site URL: [Live site](https://ordersummarycomponent.netlify.app/)
 
 ## My process
 
