@@ -3,7 +3,7 @@ body {
 	margin: 0;
 	box-sizing: border-box;
 	font-size: 16px;
-	background-image: url(../order-summary-component-main/images/pattern-background-desktop.svg);
+	background-image: url(images/pattern-background-desktop.svg);
 	background-repeat: no-repeat;
 	background-color: var(--paleBlue);
 	background-blend-mode: multiply;
@@ -21,7 +21,7 @@ body {
 	height: 200px;
 	width: 400px;
 	border-radius: 12px 12px 0 0;
-	background-image: url(../order-summary-component-main/images/illustration-hero.svg);
+	background-image: url(images/illustration-hero.svg);
 	background-size: cover;
 }
 #card2 {
@@ -106,7 +106,7 @@ button:hover {
 }
 @media (max-width: 470px) {
 	body {
-		background-image: url(../order-summary-component-main/images/pattern-background-mobile.svg);
+		background-image: url(images/pattern-background-mobile.svg);
 	}
 	.container {
 		height: 800px;
