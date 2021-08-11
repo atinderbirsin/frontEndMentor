@@ -74,6 +74,11 @@ button:hover {
 }
 .attribution a {
 	color: var(--white);
+	text-decoration: none;
+}
+.atthover:hover {
+	color: var(--softMagenta);
+	transition: all 0.3s;
 }
 @media (max-width: 1000px) {
 	main {
