@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution](https://your-solution-url.com)
-- Live Site URL: [liveSite](https://your-live-site-url.com)
+- Solution URL: [solution](https://github.com/atinderbirsin/frontEndMentor/tree/main/huddle-landing-page)
+- Live Site URL: [liveSite](https://hudlelanding.netlify.app/)
 
 ## My process
 
