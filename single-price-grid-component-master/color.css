@@ -1,0 +1,13 @@
+:root {
+	/* primary colors */
+	--cyan: hsl(179, 62%, 43%);
+	--brightYellow: hsl(71, 73%, 54%);
+	/* Neutral colors  */
+	--lightGray: hsl(204, 43%, 93%);
+	--grayishBlue: hsl(218, 22%, 67%);
+	/* Extra for class attribution */
+	--somethingLikeBlue: hsl(228, 45%, 44%);
+	/* Extra you may need Somethimes */
+	--white: hsl(256, 100%, 100%);
+	--black: hsl(0, 0%, 0%);
+}
