@@ -36,7 +36,6 @@ body {
 
 .card2img {
 	border-radius: 50%;
-	position: fixed;
 	border: 6px solid var(--white);
 	margin-top: 160px;
 	z-index: 20;
