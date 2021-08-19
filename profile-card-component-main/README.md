@@ -29,7 +29,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Links
 
-- Solution URL: [solutionGithub](https://github.com/atinderbirsin)
+- Solution URL: [solutionGithub](https://github.com/atinderbirsin/frontEndMentor/tree/main/profile-card-component-main)
 - Live Site URL: [liveSite](https://profilecardcomp.netlify.app/)
 
 ## My process
