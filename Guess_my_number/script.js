@@ -3,66 +3,72 @@
 let randNum = Math.floor(Math.random() * 20 + 1);
 let guessBtn = document.querySelector('.check');
 let score = 20;
-// console.log('before refresh', randNum);
+
+const displayMessage = message => {
+  document.querySelector('.message').textContent = message;
+};
+
+const displayScore = score => {
+  document.querySelector('.score').textContent = score;
+};
+
+const setBackground = color => {
+  document.body.style.backgroundColor = color;
+};
+
+const setWidth = width => {
+  document.querySelector('.number').style.width = width;
+};
+
+const setSecretNumValue = num => {
+  document.querySelector('.number').textContent = num;
+};
 
 guessBtn.addEventListener('click', () => {
   let guessNum = Number(document.querySelector('.guess').value);
 
+  //when there is no number
   if (!guessNum) {
-    document.querySelector('.message').textContent = 'No Number';
-  } else if (guessNum === randNum) {
+    displayMessage('No Number!');
+  }
+
+  //when guess is equal to random number
+  else if (guessNum === randNum) {
     let highscore = document.querySelector('.highscore');
+
+    displayScore(score);
+    setSecretNumValue(randNum);
+    setBackground('green');
+    displayMessage('Correct Answer');
+    setWidth('30rem');
+
     if (score > highscore.textContent) {
       highscore.textContent = score;
-      document.querySelector('.score').textContent = score;
-      document.querySelector('.number').textContent = randNum;
-      document.body.style.backgroundColor = 'green';
-      document.querySelector('.message').textContent = 'Correct Answer';
-    } else if (score === highscore.textContent) {
-      document.querySelector('.score').textContent = score;
-      document.querySelector('.number').textContent = randNum;
-      document.body.style.backgroundColor = 'green';
-      document.querySelector('.message').textContent = 'Correct Answer';
-    } else if (score < highscore.textContent) {
-      document.querySelector('.score').textContent = score;
-      document.querySelector('.number').textContent = randNum;
-      document.body.style.backgroundColor = 'green';
-      document.querySelector('.message').textContent = 'Correct Answer';
     }
-    // document.querySelector('.score').textContent = score;
-    // document.querySelector('.number').textContent = randNum;
-    // document.body.style.backgroundColor = 'green';
-    // highscore.textContent = score;
-    // // document.querySelector('.highscore').textContent = score;
-    // document.querySelector('.message').textContent = 'Correct Answer';
-  } else if (guessNum > randNum) {
+  }
+  //when guess is not equal to randNum
+  else if (guessNum !== randNum) {
     if (score > 1) {
       score--;
-      document.querySelector('.score').textContent = score;
-      document.querySelector('.message').textContent = 'Too High';
+      displayScore(score);
+      displayMessage(guessNum > randNum ? 'Too High' : 'Too Low');
     } else {
-      document.querySelector('.message').textContent = 'You have Lost';
-      document.querySelector('.score').textContent = 0;
-    }
-  } else if (guessNum < randNum) {
-    if (score > 1) {
-      score--;
-      document.querySelector('.score').textContent = score;
-      document.querySelector('.message').textContent = 'Too Low';
-    } else {
-      document.querySelector('.score').textContent = 0;
-      document.querySelector('.message').textContent = 'You have Lost';
+      displayMessage('You have Lost');
+      displayScore(0);
     }
   }
 });
 
+//button to start again game
 document.querySelector('.again').addEventListener('click', () => {
-  document.querySelector('.guess').value = '';
   score = 20;
-  document.querySelector('.score').textContent = score;
-  document.querySelector('.message').textContent = 'Start guessing...';
-  document.body.style.backgroundColor = '#222222';
-  // document.querySelector('.highscore').textContent = 0;
+  displayScore(score);
+
+  displayMessage('Start guessing...');
+  document.querySelector('.guess').value = '';
+  setBackground('#222');
+  setWidth('15rem');
+
   randNum = Math.floor(Math.random() * 20 + 1);
-  document.querySelector('.number').textContent = '?';
+  setSecretNumValue('?');
 });
