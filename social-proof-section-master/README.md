@@ -15,8 +15,8 @@
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution](https://github.com/atinderbirsin/frontEndMentor/tree/main/social-proof-section-master)
+- Live Site URL: [Live Site](https://social-prooff.netlify.app/)
 
 ### Built with
 
@@ -28,6 +28,5 @@
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [Atinder](https://github.com/atinderbirsin)
+- Frontend Mentor - [@Atinder](https://www.frontendmentor.io/profile/atinderbirsin)
