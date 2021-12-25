@@ -1,0 +1,100 @@
+/* 
+
+---- 01 TYPOGRAPHY SYSTEM
+
+- FONT SIZE SYSTEM (px):
+    10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights 
+Default: 400
+Medium: 500
+Semi bold: 600
+bold: 700
+
+- Line heights
+Default:1
+small: 1.05
+medium : 1.25
+Paragraph Default : 1.6
+
+- Letter spacing
+-0.5px
+0.75px
+
+
+---- 02 COLORS
+
+- Primary: #e67e22
+- Tints:
+#fdf2e9
+#fae5d3
+- Shades:#cf711f
+- Accents:
+- Greys:
+#555
+#333
+
+---- 05 SHADOWS
+
+---- 06 BORDER-RADIUS
+0.9rem
+
+
+
+---- 07 WHITESPACE
+
+- SPACING SYSTEM (px)
+    2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+
+*/
+
+/* Reuseable Components */
+
+.container {
+  margin: 0 auto;
+  max-width: 110rem;
+}
+
+.grid {
+  display: grid;
+  row-gap: 5.2rem;
+  column-gap: 3.6rem;
+}
+
+.grid-2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-footer {
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+
+.grid-center-v {
+  align-items: center;
+}
+
+.grid:not(:last-child) {
+  margin-bottom: 4.8rem;
+}
+
+.center-text {
+  text-align: center;
+}
+
+strong {
+  font-weight: 500;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 8px rgba(230, 125, 34, 0.5);
+}
